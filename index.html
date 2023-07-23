@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="turnjs4/extras/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+  <script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="birthday-cake-clipart.ico">
+</head>
+<body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#flipbook").turn({
+        width: 900,
+        height: 700,
+        autoCenter: true
+      });
+    });
+  </script>
+  
+  <div id="container">
+    <div id="flipbook">
+      <div class="hard" style="background-image: url('page1.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hard" style="background-image: url('Page2.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hard" style="background-image: url('page3.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hard" style="background-image: url('back.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hard" style="background-color: black;"></div>
+    </div>
+  </div>
+
+</body>
+</html>
